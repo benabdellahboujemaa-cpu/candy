@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candy Crush Saga – Secret Pro Guide 2026 | Unlock Expert Tips & Cheats</title>
+<meta name="description" content="Unlock the ultimate Candy Crush Saga guide: expert tips, level strategies, boosters & cheats. One quick verification unlocks your free step-by-step pro guide instantly.">
+<meta name="keywords" content="candy crush saga guide, candy crush tips, candy crush cheats, candy crush levels, candy crush boosters, candy crush saga secrets, how to beat candy crush, candy crush saga walkthrough 2026">
+<meta property="og:title" content="Candy Crush Saga Pro Guide – Unlock Now Free">
+<meta property="og:description" content="The #1 Candy Crush Saga strategy guide. One verification step. Instant access.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --candy-pink: #FF3D9A;
+    --candy-purple: #9B1FFF;
+    --candy-blue: #00C2FF;
+    --candy-yellow: #FFD700;
+    --candy-green: #00E676;
+    --candy-red: #FF2D55;
+    --candy-orange: #FF8C00;
+    --bg-dark: #0D0520;
+    --bg-mid: #1A0A3C;
+    --text-white: #FFFFFF;
+    --text-soft: #E8D5FF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* ── ANIMATED BACKGROUND ── */
+  .bg-layer {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 0%, #3D0070 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 100%, #7B0040 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50% 50%, #0D2080 0%, transparent 70%),
+      linear-gradient(160deg, #0D0520 0%, #1A0A3C 50%, #0A0018 100%);
+  }
+
+  .candy-particles {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none; overflow: hidden;
+  }
+
+  .particle {
+    position: absolute;
+    border-radius: 50%;
+    animation: floatUp linear infinite;
+    opacity: 0.6;
+  }
+
+  @keyframes floatUp {
+    0%   { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.7; }
+    90%  { opacity: 0.7; }
+    100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+  }
+
+  /* ── WRAPPER ── */
+  .page { position: relative; z-index: 10; }
+
+  /* ── HEADER / HERO ── */
+  header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    position: relative;
+  }
+
+  .badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--candy-pink), var(--candy-purple));
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(255, 61, 154, 0.5);
+    animation: pulse-badge 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-badge {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 61, 154, 0.5); }
+    50%       { box-shadow: 0 0 40px rgba(255, 61, 154, 0.9); }
+  }
+
+  .hero-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(42px, 8vw, 90px);
+    line-height: 1.0;
+    background: linear-gradient(135deg, #FFD700 0%, #FF8C00 30%, #FF3D9A 60%, #9B1FFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 4px 20px rgba(255, 61, 154, 0.4));
+    margin-bottom: 10px;
+    animation: title-appear 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  @keyframes title-appear {
+    from { opacity: 0; transform: scale(0.7) translateY(30px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .hero-sub {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(20px, 4vw, 38px);
+    color: var(--text-soft);
+    margin-bottom: 24px;
+    animation: title-appear 0.8s 0.15s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  }
+
+  /* ── CANDY BALL GRAPHIC ── */
+  .candy-globe-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 30px;
+    animation: float-glob 3s ease-in-out infinite;
+  }
+
+  @keyframes float-glob {
+    0%, 100% { transform: translateY(0px) rotate(-2deg); }
+    50%       { transform: translateY(-18px) rotate(2deg); }
+  }
+
+  .candy-globe-wrap img {
+    width: clamp(140px, 30vw, 220px);
+    border-radius: 50%;
+    filter: drop-shadow(0 20px 40px rgba(255, 61, 154, 0.6)) drop-shadow(0 0 60px rgba(155, 31, 255, 0.4));
+  }
+
+  /* ── PROMISE BOX ── */
+  .promise-section {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    text-align: center;
+    animation: fade-up 0.6s 0.3s ease both;
+  }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .promise-text {
+    font-size: clamp(16px, 2.5vw, 22px);
+    font-weight: 700;
+    color: var(--text-soft);
+    line-height: 1.7;
+    margin-bottom: 30px;
+  }
+
+  .promise-text strong { color: var(--candy-yellow); }
+
+  /* ── WHAT YOU GET ── */
+  .benefits-section {
+    max-width: 860px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+  }
+
+  .section-label {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(26px, 4vw, 42px);
+    text-align: center;
+    color: var(--candy-yellow);
+    margin-bottom: 30px;
+    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+
+  .benefit-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 24px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    animation: fade-up 0.6s ease both;
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: var(--candy-pink);
+    box-shadow: 0 10px 40px rgba(255, 61, 154, 0.25);
+  }
+
+  .benefit-icon {
+    font-size: 36px;
+    flex-shrink: 0;
+    filter: drop-shadow(0 2px 8px rgba(255,255,255,0.2));
+  }
+
+  .benefit-card h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--candy-blue);
+    margin-bottom: 6px;
+  }
+
+  .benefit-card p {
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.5;
+  }
+
+  /* ── STEP SECTION ── */
+  .steps-section {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .step-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 18px 22px;
+    text-align: left;
+    backdrop-filter: blur(8px);
+    animation: fade-up 0.5s ease both;
+  }
+
+  .step-num {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    flex-shrink: 0;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .step-num.s1 { background: linear-gradient(135deg, var(--candy-blue), #006FBF); box-shadow: 0 0 20px rgba(0,194,255,0.5); }
+  .step-num.s2 { background: linear-gradient(135deg, var(--candy-pink), #C0006B); box-shadow: 0 0 20px rgba(255,61,154,0.5); }
+  .step-num.s3 { background: linear-gradient(135deg, var(--candy-green), #00A050); box-shadow: 0 0 20px rgba(0,230,118,0.5); }
+
+  .step-item p { font-size: 15px; font-weight: 700; color: var(--text-soft); line-height: 1.5; }
+  .step-item p strong { color: #fff; font-size: 16px; display: block; margin-bottom: 3px; }
+
+  /* ── CTA SECTION ── */
+  .cta-section {
+    max-width: 680px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .cta-box {
+    background: linear-gradient(135deg, rgba(155,31,255,0.2), rgba(255,61,154,0.2));
+    border: 2px solid rgba(255,61,154,0.4);
+    border-radius: 28px;
+    padding: 44px 36px;
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-box::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, rgba(255,61,154,0.1) 0%, transparent 70%);
+    animation: cta-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes cta-glow {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+  }
+
+  .cta-headline {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(26px, 5vw, 44px);
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .cta-sub {
+    font-size: 16px;
+    color: var(--text-soft);
+    margin-bottom: 32px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .cta-sub span { color: var(--candy-yellow); }
+
+  .unlock-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FFD700 0%, #FF8C00 40%, #FF3D9A 80%, #9B1FFF 100%);
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(20px, 3.5vw, 30px);
+    padding: 20px 52px;
+    border-radius: 100px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    position: relative;
+    box-shadow: 0 8px 40px rgba(255, 61, 154, 0.6), 0 0 0 0 rgba(255,215,0,0.4);
+    animation: btn-pulse 1.8s ease-in-out infinite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none; cursor: pointer;
+    z-index: 10;
+  }
+
+  .unlock-btn:hover {
+    transform: scale(1.06) translateY(-3px);
+    box-shadow: 0 16px 60px rgba(255, 61, 154, 0.8), 0 0 0 6px rgba(255,215,0,0.3);
+  }
+
+  @keyframes btn-pulse {
+    0%, 100% { box-shadow: 0 8px 40px rgba(255,61,154,0.6), 0 0 0 0 rgba(255,215,0,0.4); }
+    50%       { box-shadow: 0 8px 60px rgba(255,61,154,0.9), 0 0 0 12px rgba(255,215,0,0); }
+  }
+
+  .btn-arrow { display: inline-block; margin-left: 8px; animation: arrow-bounce 0.7s ease-in-out infinite alternate; }
+  @keyframes arrow-bounce { from { transform: translateX(0); } to { transform: translateX(6px); } }
+
+  .trust-line {
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    position: relative;
+  }
+
+  .trust-line span { color: var(--candy-green); font-weight: 800; }
+
+  /* ── URGENCY BAR ── */
+  .urgency-bar {
+    background: linear-gradient(90deg, var(--candy-red), var(--candy-orange));
+    text-align: center;
+    padding: 14px 20px;
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(14px, 2.5vw, 20px);
+    letter-spacing: 0.5px;
+    color: #fff;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 4px 20px rgba(255,45,85,0.5);
+  }
+
+  .urgency-bar em { color: var(--candy-yellow); font-style: normal; }
+
+  /* ── SOCIAL PROOF ── */
+  .social-section {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .stars { font-size: 28px; margin-bottom: 10px; letter-spacing: 4px; }
+
+  .proof-text {
+    font-size: 15px;
+    color: var(--text-soft);
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .proof-count {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(36px, 6vw, 60px);
+    color: var(--candy-yellow);
+    display: block;
+    text-shadow: 0 0 30px rgba(255,215,0,0.5);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 30px 20px 50px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+    line-height: 1.8;
+  }
+
+  footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
+
+  /* ── CANDY ICONS DIVIDER ── */
+  .divider {
+    text-align: center;
+    font-size: 28px;
+    margin: 40px 0;
+    letter-spacing: 10px;
+    opacity: 0.5;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 480px) {
+    .cta-box { padding: 30px 20px; }
+    .unlock-btn { padding: 18px 32px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Animated bg -->
+<div class="bg-layer"></div>
+<div class="candy-particles" id="particles"></div>
+
+<!-- Sticky urgency bar -->
+<div class="urgency-bar">
+  ⚡ <em>LIMITED ACCESS:</em> Free Pro Guide Available Today Only — Don't Miss Out!
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <header>
+    <div class="badge">🍬 Exclusive 2026 Strategy Guide</div>
+    <h1 class="hero-title">Candy Crush Saga</h1>
+    <div class="hero-sub">Master Every Level. Beat Every Boss.</div>
+
+    <!-- Candy globe image -->
+    <div class="candy-globe-wrap">
+      <img src="channels4_profile.jpg" alt="Candy Crush Saga candy ball" onerror="this.style.display='none'">
+    </div>
+
+    <div class="promise-section">
+      <p class="promise-text">
+        You're <strong>one step away</strong> from unlocking the complete<br>
+        <strong>Candy Crush Saga Pro Guide</strong> — including level walkthroughs,<br>
+        booster strategies, streak tips, and secret combos <strong>that actually work.</strong>
+      </p>
+    </div>
+  </header>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-section" style="animation: fade-up 0.6s 0.2s ease both;">
+    <div class="stars">⭐⭐⭐⭐⭐</div>
+    <span class="proof-count">127,400+</span>
+    <p class="proof-text">players have already unlocked the guide and leveled up their game</p>
+  </section>
+
+  <div class="divider">🍭 🍬 🍡 🍫 🍭</div>
+
+  <!-- WHAT YOU'LL GET -->
+  <section class="benefits-section">
+    <h2 class="section-label">📖 What's Inside the Free Guide</h2>
+    <div class="benefits-grid">
+
+      <div class="benefit-card" style="animation-delay:0.1s">
+        <div class="benefit-icon">🗺️</div>
+        <div>
+          <h3>Level-by-Level Walkthrough</h3>
+          <p>Step-by-step strategies for every episode — from Candy Town to the hardest boss levels.</p>
+        </div>
+      </div>
+
+      <div class="benefit-card" style="animation-delay:0.2s">
+        <div class="benefit-icon">💣</div>
+        <div>
+          <h3>Booster Mastery Guide</h3>
+          <p>Learn exactly when and how to use each booster for maximum impact and chain reactions.</p>
+        </div>
+      </div>
+
+      <div class="benefit-card" style="animation-delay:0.3s">
+        <div class="benefit-icon">⚡</div>
+        <div>
+          <h3>Combo & Special Candy Secrets</h3>
+          <p>Color bombs, striped candies, and wrapped candy combos — all explained with examples.</p>
+        </div>
+      </div>
+
+      <div class="benefit-card" style="animation-delay:0.4s">
+        <div class="benefit-icon">🎯</div>
+        <div>
+          <h3>3-Star Strategy for Every Level</h3>
+          <p>Exact move counts, board reading tips, and patterns to hit 3 stars consistently.</p>
+        </div>
+      </div>
+
+      <div class="benefit-card" style="animation-delay:0.5s">
+        <div class="benefit-icon">🔒</div>
+        <div>
+          <h3>Infinite Lives Trick</h3>
+          <p>A legitimate method to extend your play sessions without spending a single coin.</p>
+        </div>
+      </div>
+
+      <div class="benefit-card" style="animation-delay:0.6s">
+        <div class="benefit-icon">🏆</div>
+        <div>
+          <h3>Tournament & Event Tips</h3>
+          <p>Dominate weekly challenges and limited-time events before they disappear.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider">🍬 🍡 🍭 🍫 🍬</div>
+
+  <!-- MAIN CTA -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <h2 class="cta-headline">🍭 Unlock Your Free Pro Guide Now</h2>
+      <p class="cta-sub">
+        <span>100% Free</span> · Takes Less Than 60 Seconds · Instant Access
+      </p>
+      <a href="https://checkmyapp.store/cl/i/veenv9" class="unlock-btn" rel="noopener">
+        ✅ Verify & Get Free Guide <span class="btn-arrow">→</span>
+      </a>
+      <p class="trust-line">
+        <span>🔒 Secure</span> · <span>✅ No Credit Card</span> · <span>🎮 Gamer-Verified</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- BOTTOM SOCIAL PROOF -->
+  <section class="social-section" style="margin-bottom: 40px;">
+    <p class="proof-text" style="font-size:17px; color: #fff;">
+      🔥 <strong style="color:var(--candy-pink)">847 players</strong> accessed this guide in the last 24 hours
+    </p>
+    <p class="proof-text" style="margin-top:10px;">
+      Don't let another player get ahead — unlock your guide while access is still <strong style="color:var(--candy-yellow)">FREE</strong>.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>This site is independently operated and not affiliated with King.com or Candy Crush Saga™.</p>
+    <p>Candy Crush Saga is a trademark of King.com Limited. All game rights belong to their respective owners.</p>
+    <p style="margin-top:10px;">
+      <a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a> · <a href="#">Disclaimer</a>
+    </p>
+    <p style="margin-top:10px;">© 2026 CandyCrushGuide.store — All rights reserved.</p>
+  </footer>
+
+</div><!-- /page -->
+
+<script>
+  // ── CANDY PARTICLES ──
+  const colors = ['#FF3D9A','#00C2FF','#FFD700','#00E676','#FF2D55','#9B1FFF','#FF8C00'];
+  const container = document.getElementById('particles');
+
+  for (let i = 0; i < 28; i++) {
+    const el = document.createElement('div');
+    el.className = 'particle';
+    const size = Math.random() * 18 + 8;
+    el.style.cssText = `
+      width: ${size}px; height: ${size}px;
+      background: ${colors[Math.floor(Math.random() * colors.length)]};
+      left: ${Math.random() * 100}%;
+      animation-duration: ${Math.random() * 12 + 8}s;
+      animation-delay: ${Math.random() * 10}s;
+      box-shadow: 0 0 ${size}px ${colors[Math.floor(Math.random() * colors.length)]};
+    `;
+    container.appendChild(el);
+  }
+
+  // ── STAGGER benefit cards on scroll ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.benefit-card, .step-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = `opacity 0.5s ${i * 0.08}s ease, transform 0.5s ${i * 0.08}s ease`;
+    observer.observe(el);
+  });
+
+  // ── LIVE COUNTER TICKER ──
+  const countEl = document.querySelector('.proof-count');
+  if (countEl) {
+    const base = 127400;
+    setInterval(() => {
+      const rand = Math.floor(Math.random() * 3);
+      const current = parseInt(countEl.textContent.replace(/,/g, ''));
+      countEl.textContent = (current + rand).toLocaleString() + '+';
+    }, 5000);
+  }
+</script>
+</body>
+</html>
